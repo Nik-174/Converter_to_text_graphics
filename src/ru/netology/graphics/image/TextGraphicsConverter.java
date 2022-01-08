@@ -19,7 +19,7 @@ public interface TextGraphicsConverter {
      * с сохранением пропорций.
      * @param width максимальная ширина текстовых картинок
      */
-    void setMaxWidth(int width);
+    void setWidth(int width);
 
     /**
      * Устанавливает максимальную высоту результирующего изображения в "текстовых пикселях".

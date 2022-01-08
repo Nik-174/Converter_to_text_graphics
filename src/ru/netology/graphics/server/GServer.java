@@ -6,7 +6,6 @@ import ru.netology.graphics.image.TextGraphicsConverter;
 
 import java.io.*;
 import java.net.InetSocketAddress;
-import java.net.http.HttpResponse;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
@@ -25,7 +24,7 @@ public class GServer {
         }
         this.converter = converter;
         this.converter.setMaxHeight(300);
-        this.converter.setMaxWidth(300);
+        this.converter.setWidth(300);
         this.converter.setMaxRatio(4);
 
         server = HttpServer.create(new InetSocketAddress("localhost", PORT), 0);
